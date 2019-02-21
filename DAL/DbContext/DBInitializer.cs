@@ -42,7 +42,7 @@ namespace menueats.api.DAL.DbContext
                     Email = "admin@menu-eats.co.za"
                 };
 
-                var createUserResult = await _userManager.CreateAsync(user, "p@$$w0rd");
+                var createUserResult = await _userManager.CreateAsync(user, "Ahm3dia@!");
                 var addRoleResult = await _userManager.AddToRoleAsync(user, "Admin");
                 var AddClaimResult = await _userManager.AddClaimAsync(user, new Claim("SuperUser", "True"));
 

@@ -34,7 +34,7 @@ namespace menueats.api.API.ServicesExtensions
         public static void ConfigurSQLServerContext(this IServiceCollection services)
         {
             services.AddDbContext<RepositoryContext>(ServiceLifetime.Scoped);
-            services.AddTransient<DBInitializer>();
+            
         }
 
         public static void ConfigureUserIdentity(this IServiceCollection services){

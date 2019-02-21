@@ -6,9 +6,9 @@ namespace menueats.api.DAL.DbContext
     using Microsoft.Extensions.Configuration;
     public class RepositoryContext : IdentityDbContext
     {
-        private IConfiguration _config;
+        private IConfigurationRoot _config;
 
-        public RepositoryContext(DbContextOptions<RepositoryContext> options, IConfiguration config)
+        public RepositoryContext(DbContextOptions<RepositoryContext> options, IConfigurationRoot config)
             : base(options)
         {
             _config = config;
