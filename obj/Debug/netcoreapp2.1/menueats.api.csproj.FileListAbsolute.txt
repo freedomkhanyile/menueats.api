@@ -1,0 +1,14 @@
+C:\Users\User\source\vscode-repos\menueats.api\bin\Debug\netcoreapp2.1\menueats.api.deps.json
+C:\Users\User\source\vscode-repos\menueats.api\bin\Debug\netcoreapp2.1\menueats.api.runtimeconfig.json
+C:\Users\User\source\vscode-repos\menueats.api\bin\Debug\netcoreapp2.1\menueats.api.runtimeconfig.dev.json
+C:\Users\User\source\vscode-repos\menueats.api\bin\Debug\netcoreapp2.1\menueats.api.dll
+C:\Users\User\source\vscode-repos\menueats.api\bin\Debug\netcoreapp2.1\menueats.api.pdb
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.csprojAssemblyReference.cache
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.csproj.CoreCompileInputs.cache
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.RazorAssemblyInfo.cache
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.RazorAssemblyInfo.cs
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.AssemblyInfoInputs.cache
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.AssemblyInfo.cs
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.RazorTargetAssemblyInfo.cache
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.dll
+C:\Users\User\source\vscode-repos\menueats.api\obj\Debug\netcoreapp2.1\menueats.api.pdb
