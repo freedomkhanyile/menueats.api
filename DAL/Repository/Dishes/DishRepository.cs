@@ -4,6 +4,7 @@ using System.Linq;
 using menueats.api.DAL.Contracts.IDish;
 using menueats.api.DAL.DbContext;
 using menueats.api.DAL.Entities;
+using menueats.api.DAL.Entities.Extensions.Dishes;
 using menueats.api.DAL.Repository.RepositoryBase;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,24 @@ namespace menueats.api.DAL.Repository.Dishes
             : base(repositoryContext)
         {
 
+        }
+
+        public bool AddDish(Dish model)
+        {
+            var isDone = false;
+            try
+            {
+                Create(model);
+                Save(); 
+                isDone = true;               
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+
+            return isDone;
         }
 
         public Dish GetDish(int id)
@@ -44,6 +63,26 @@ namespace menueats.api.DAL.Repository.Dishes
                     .Include(d => d.Comments)
                     .Where(d => d.DishId == id)
                     .FirstOrDefault();
+        }
+
+        public bool UpdateDish(Dish dbmodel, Dish model)
+        {
+            var isDone = false;
+            try
+            {
+                dbmodel.Map(model);
+                Update(dbmodel);
+                Save();
+                isDone = true;
+
+            }
+            catch (System.Exception)
+            {
+                
+                throw;
+            }
+
+            return isDone;
         }
     }
 }

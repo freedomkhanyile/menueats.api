@@ -8,5 +8,8 @@ namespace menueats.api.DAL.Contracts.IDish
         Dish GetDishWithComments(int id);
         Dish GetDish(int id);
         IEnumerable<Dish> GetDishesByCategory(string category);
+
+        bool AddDish(Dish model);
+        bool UpdateDish(Dish dbmodel, Dish model);
     }
 }
