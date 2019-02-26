@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AutoMapper;
 using menueats.api.DAL.DbContext;
+using Newtonsoft.Json;
 
 namespace menueats.api
 {
@@ -39,7 +40,9 @@ namespace menueats.api
             //use the command below to upgrade automapper used by DI
             //dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 3.0.1           
             services.AddAutoMapper();
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc()
+            .AddJsonOptions(options => options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore)
+            .SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,8 +58,10 @@ namespace menueats.api
             }
 
             app.UseHttpsRedirection();
+              app.UseAuthentication();
             app.UseMvc();
             seeder.Seed().Wait();
+
         }
     }
 }
