@@ -24,8 +24,9 @@ namespace menueats.api.API.Controllers
         private IMapper _mapper;
         private UserManager<User> _userManager;
 
-        [HttpPost]
+
         [Authorize]
+        [HttpPost]        
         public async Task<IActionResult> Post(int id, [FromBody] CommentModel model)
         {
             try

@@ -40,7 +40,7 @@ namespace menueats.api.DAL.Repository.Dishes
         public Dish GetDish(int id)
         {
             return _repositoryContext.Dishes
-                    .Where(d => d.DishId == id)
+                    .Where(d => d.DishId == id)                     
                     .FirstOrDefault();
         }
 
@@ -59,9 +59,9 @@ namespace menueats.api.DAL.Repository.Dishes
 
         public Dish GetDishWithComments(int id)
         {
-            return _repositoryContext.Dishes
-                    .Include(d => d.Comments)
+            return _repositoryContext.Dishes                   
                     .Where(d => d.DishId == id)
+                    .Include(d => d.Comments)
                     .FirstOrDefault();
         }
 
